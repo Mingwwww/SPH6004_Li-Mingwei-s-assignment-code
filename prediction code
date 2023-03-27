@@ -87,7 +87,7 @@ trainX, testX, trainY, testY = train_test_split(X, Y, random_state=3, test_size=
 #resample
 from imblearn.over_sampling import SMOTE
 sm = SMOTE(random_state = 42, n_jobs = -1)
-X_resampled, y_resampled = sm.fit_sample(trainX, trainY)
+X_resampled, y_resampled = sm.fit_resample(trainX, trainY)
 
 
 
